@@ -30,7 +30,7 @@ public class Permutate {
     }
 
     public static void main(String[] args) {
-	String str[] = { "1", "2", "3", "4" };
+	String str[] = { "1", "2", "3" };
 	arrange(str, 0, str.length);
 	System.out.println(total);
 
