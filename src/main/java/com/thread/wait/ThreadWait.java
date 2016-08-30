@@ -1,4 +1,4 @@
-package com.thread;
+package com.thread.wait;
 
 /**
  * 多线程交替输出内容
