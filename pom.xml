@@ -8,7 +8,7 @@
 		<version>2.2</version>
 	</parent>
 	<groupId>com.lashou.treasure</groupId>
-	<artifactId>kafka-producer</artifactId>
+	<artifactId>classics</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.X</version>
 	<name>treasure Webapp</name>
@@ -93,13 +93,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 		</dependency>
-		<!-- HTTP client -->
-		<!-- <dependency> <groupId>org.apache.httpcomponents</groupId> <artifactId>httpclient</artifactId> 
-			<version>4.2.5</version> </dependency> -->
-		<!-- json object -->
-		<!-- <dependency> <groupId>org.json</groupId> <artifactId>json</artifactId> 
-			<version>20090211</version> </dependency> -->
-		<!-- apache poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -124,7 +117,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>treasure-admin</finalName>
+		<finalName>classics</finalName>
 
 		<plugins>
 			<plugin>
