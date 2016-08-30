@@ -25,6 +25,16 @@ public class CyclicBarrierExample {
         executor.submit(new Thread(new Runner(barrier, "3号选手")));  
   
         executor.shutdown();  
+     
+        barrier.reset();
+        
+        System.out.println("----------------------------------------------");
+        ExecutorService executor2 = Executors.newFixedThreadPool(3);  
+        executor2.submit(new Thread(new Runner(barrier, "11号选手")));  
+        executor2.submit(new Thread(new Runner(barrier, "21号选手")));  
+        executor2.submit(new Thread(new Runner(barrier, "31号选手")));  
+  
+        executor2.shutdown(); 
     }
 }
 
