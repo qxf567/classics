@@ -8,4 +8,11 @@ public class ArraysPrint {
 	}
 	System.out.println();
     }
+    
+    public static void printf(String[] arr) {
+	for (String a : arr) {
+	    System.out.print(a + " ");
+	}
+	System.out.println();
+    }
 }
