@@ -1,0 +1,11 @@
+.classpath
+.project
+.settings/
+target/
+.checkstyle
+/bin
+/target
+/overlays
+v-cms.iml
+.idea/
+atlassian-ide-plugin.xml

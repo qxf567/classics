@@ -1,0 +1,11 @@
+package com.utils;
+
+/** 数组输出 */
+public class ArraysPrint {
+    public static void printf(int[] arr) {
+	for (int a : arr) {
+	    System.out.print(a + " ");
+	}
+	System.out.println();
+    }
+}
