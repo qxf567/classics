@@ -1,4 +1,4 @@
-package com.alogrithim;
+package com.thread;
 
 /**
  * 多线程交替输出内容
