@@ -18,7 +18,7 @@ public class Lru {
       
     /** 
      * 判断内存区是否为空 
-     * @return 
+     * @return boolean
      */  
     public boolean isEmpty() {  
         if(size == 0) {  
