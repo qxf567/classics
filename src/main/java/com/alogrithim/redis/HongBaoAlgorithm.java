@@ -3,11 +3,10 @@ package com.alogrithim.redis;
 import java.util.Random;
 
 /**
-
-小红包预先生成
-
-http://blog.csdn.net/hengyunabc/article/details/19177877
-*/
+ * 小红包预先生成
+ * 
+ * http://blog.csdn.net/hengyunabc/article/details/19177877
+ */
 public class HongBaoAlgorithm {
     static Random random = new Random();
     static {
