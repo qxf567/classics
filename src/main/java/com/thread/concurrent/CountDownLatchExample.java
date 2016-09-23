@@ -86,10 +86,10 @@ public class CountDownLatchExample {
 	    start.countDown();
 	    System.out.println("Game Start------");
 	    Thread.sleep((long) (Math.random() * 10000));
+	    end.await();
 	} catch (InterruptedException e) {
 	    e.printStackTrace();
 	} finally {
-	    end.countDown();
 	}
 	System.out.println("Game Over-----");
 
