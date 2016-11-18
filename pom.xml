@@ -2,39 +2,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.lashou</groupId>
-		<artifactId>maven-parent</artifactId>
-		<version>2.2</version>
-	</parent>
-	<groupId>com.lashou.treasure</groupId>
+	<groupId>com.classics</groupId>
 	<artifactId>classics</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.X</version>
-	<name>treasure Webapp</name>
+	<name>Webapp</name>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<lts.version>1.6.2</lts.version>
-	</properties>
-	<scm>
-		<connection>scm:git:http://devops.lashou-inc.com:7990/scm/BAO/treasure-admin.git</connection>
-		<developerConnection>scm:git:http://devops.lashou-inc.com:7990/scm/BAO/treasure-admin.git</developerConnection>
-		<url>http://devops.lashou-inc.com:7990/projects/BAO/repos/treasure-admin/browse</url>
-		<tag>HEAD</tag>
-	</scm>
 	<dependencies>
-		<dependency>
-			<groupId>com.lashou.treasure</groupId>
-			<artifactId>treasure-common</artifactId>
-			<version>1.0.6-SNAPSHOT</version>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka-clients</artifactId>
 			<version>0.10.0.0</version>
 		</dependency>
-
 
 		<!-- JSTL -->
 		<dependency>
@@ -42,57 +21,8 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		<!-- logging -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-		</dependency>
-		<!-- ====================== fast dfs ====================== -->
-		<dependency>
-			<groupId>org.csource</groupId>
-			<artifactId>fastdfs</artifactId>
-		</dependency>
-		<!-- image watermark -->
-		<dependency>
-			<groupId>net.coobird</groupId>
-			<artifactId>thumbnailator</artifactId>
-			<version>0.4.6</version>
-		</dependency>
-		<!-- JAWR -->
-		<dependency>
-			<groupId>net.jawr</groupId>
-			<artifactId>jawr-core</artifactId>
-			<version>3.6</version>
-		</dependency>
-		<dependency>
-			<groupId>net.jawr.extensions</groupId>
-			<artifactId>jawr-spring-extension</artifactId>
-			<version>3.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.yahoo.platform.yui</groupId>
-			<artifactId>yuicompressor</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>rhino</groupId>
-					<artifactId>js</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 		<!-- dependencies for testing -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -113,7 +43,60 @@
 			<artifactId>super-csv</artifactId>
 			<version>2.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.9.0</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>1.8.0.M1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
 
 	</dependencies>
 	<build>

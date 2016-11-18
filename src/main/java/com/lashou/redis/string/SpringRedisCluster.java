@@ -21,7 +21,7 @@ public class SpringRedisCluster {
 
     public static <V> void main(String[] args) {
 
-	ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:com/lashou/redis/redis.xml");
+	ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:com/redis/redis.xml");
 	RedisTemplate<String, Object> redisTemplate = (RedisTemplate<String, Object>) ac.getBean("redisTemplate");
 
 	redisTemplate.opsForValue().set("foo", "999999999");

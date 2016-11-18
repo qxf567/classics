@@ -25,7 +25,6 @@ public class ThreadJoin {
 
 class T1 implements Runnable {
 
-    @Override
     public void run() {
 	for (int i = 0; i < 5; i++) {
 	    System.out.println(Thread.currentThread().getName() + ": " + i);
@@ -40,7 +39,6 @@ class T1 implements Runnable {
 
 class T2 implements Runnable {
 
-    @Override
     public void run() {
 	for (int j = 5; j < 10; j++) {
 	    System.out.println(Thread.currentThread().getName() + ": " + j);
