@@ -12,6 +12,8 @@ import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * 
+ * http://doc.redisfans.com/topic/cluster-tutorial.html#id2
+ * 
  * 使用jedis提供的方法来操作redis-cluster 
  * 
  * 基于jedis-2.9.0
