@@ -9,7 +9,7 @@ import org.apache.commons.lang.time.StopWatch;
 
 import redis.clients.jedis.Jedis;
 
-import com.lashou.treasure.common.util.JsonUtil;
+import com.utils.JsonUtil;
 
 /**
  * 利用redis + lua解决抢红包高并发的问题
