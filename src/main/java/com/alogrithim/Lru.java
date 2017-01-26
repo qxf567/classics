@@ -2,7 +2,7 @@ package com.alogrithim;
 
 /**
  * Last recent use alogrithim
- * 
+ * LRU是Least Recently Used 近期最少使用算法
  */ 
   
 public class Lru {  
