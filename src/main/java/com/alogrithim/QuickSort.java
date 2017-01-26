@@ -14,7 +14,7 @@ public class QuickSort {
 	int pivot = arr[low];// 采用子序列的第一个元素作为枢纽元素
 	while (low < high) {
 	    // 从后往前栽后半部分中寻找第一个小于枢纽元素的元素
-	    while (low < high && arr[high] > pivot) {
+	    while (low < high && arr[high] >= pivot) {
 		high--;
 	    }
 	    // 将这个比枢纽元素小的元素交换到前半部分
