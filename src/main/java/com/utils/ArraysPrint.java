@@ -15,4 +15,7 @@ public class ArraysPrint {
 	}
 	System.out.println();
     }
+    public static void print(String [] arr){
+        System.out.println(Arrays.toString(arr));
+    }
 }
