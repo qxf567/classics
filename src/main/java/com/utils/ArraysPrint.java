@@ -1,5 +1,7 @@
 package com.utils;
 
+import java.util.Arrays;
+
 /** 数组输出 */
 public class ArraysPrint {
     public static void printf(int[] arr) {
