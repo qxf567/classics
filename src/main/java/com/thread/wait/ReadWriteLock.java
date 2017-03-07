@@ -1,7 +1,6 @@
 package com.thread.wait;
 /**
- * 
- * 
+ * http://ifeve.com/read-write-locks/#simple
  */
 public class ReadWriteLock {
     private int readers = 0;
