@@ -7,9 +7,9 @@ import java.util.concurrent.CountDownLatch;
 
 import org.apache.commons.lang.time.StopWatch;
 
-import redis.clients.jedis.Jedis;
+import com.alibaba.fastjson.JSON;
 
-import com.utils.JsonUtil;
+import redis.clients.jedis.Jedis;
 
 /**
  * 利用redis + lua解决抢红包高并发的问题
@@ -64,7 +64,7 @@ public class TestEval {
 		    for (int j = temp * per; j < (temp + 1) * per; j++) {
 			object.put("id", j);
 			object.put("money", j);
-			jedis.lpush(hongBaoList, JsonUtil.toJson(object));
+			jedis.lpush(hongBaoList, JSON.toJSONString(object));
 		    }
 		    latch.countDown();
 		}
